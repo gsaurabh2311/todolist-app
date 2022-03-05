@@ -30,23 +30,12 @@ function TodoList() {
     setTodos(removedArr);
   };
 
-  const completeTodo = id => {
-    let updatedTodos = todos.map(todo => {
-      if (todo.id === id) {
-        todo.isComplete = !todo.isComplete;
-      }
-      return todo;
-    });
-    setTodos(updatedTodos);
-  };
-
   return (
     <>
       <h1>To Do List</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
-        completeTodo={completeTodo}
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />

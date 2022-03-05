@@ -83,3 +83,20 @@ h1 {
   margin-right: 5px;
   color: #fff ;
 }
+
+@media screen and (max-width: 1200px) {
+  .todo-app {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .todo-input {
+    width: 50%;
+    margin-left: 120px ;
+  }
+
+  .todo-row {
+    width: 90%;
+  }
+}
